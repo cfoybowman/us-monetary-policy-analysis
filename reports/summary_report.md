@@ -1,29 +1,32 @@
 # 📊 Summary Report: U.S. Monetary Policy Analysis
 
 ## 🎯 Objective
-Analyze how the Federal Funds Rate interacts with inflation and unemployment to understand monetary policy behavior over time.
+Analyze how the Federal Funds Rate interacts with inflation and unemployment to better understand U.S. monetary policy behavior over time.
 
-## 🧠 Approach
-- Time-series analysis of interest rates  
-- Integration of macroeconomic variables (inflation, unemployment)  
-- Rolling averages to smooth volatility  
-- Comparative visual analysis  
+## 🧠 Analytical Approach
+This project combines time-series analysis, rolling averages, correlation analysis, and linear regression to evaluate long-run policy behavior and modern macroeconomic trends.
+
+## 💼 Business Relevance
+Understanding monetary policy is important for analysts in finance, policy, and business planning because interest rates influence borrowing costs, market conditions, and economic expectations.
 
 ## 🔍 Key Findings
-- Monetary policy operates in distinct tightening and easing cycles  
-- Higher inflation often corresponds with tighter policy  
-- Lower rates align with weaker labor market conditions  
-- Relationships between variables are non-linear  
-- Modern policy shows extended low-rate environments  
+- The Federal Funds Rate moves through distinct tightening and easing cycles.
+- Higher inflation environments often coincide with tighter monetary policy.
+- Lower-rate environments frequently align with weaker labor market conditions.
+- Relationships between macroeconomic variables are directional but not perfectly linear.
+- Recent monetary policy shows prolonged accommodative periods followed by more gradual normalization.
+
+## 📊 Statistical Insight
+Correlation and regression analysis suggest that inflation and unemployment help explain variation in the Federal Funds Rate, reinforcing the value of a multi-variable analytical framework.
 
 ## ⚠️ Limitations
-- Analysis is exploratory and does not establish causality  
-- Limited macroeconomic variables included  
-- Early inflation data contains missing values  
-- Monthly data may smooth short-term fluctuations  
+- The analysis is exploratory and does not establish causality.
+- Additional macroeconomic drivers are not included.
+- Some early-period inflation values are missing.
+- Monthly data may smooth short-term policy shifts.
 
 ## 🚀 Next Steps
-- Add recession indicators  
-- Apply regression/time-series models  
-- Expand macroeconomic variables  
-- Build interactive dashboard  
+- Add recession shading and monetary regime overlays.
+- Expand the feature set with additional macroeconomic indicators.
+- Apply more advanced time-series models.
+- Build an interactive dashboard for stakeholder exploration.
