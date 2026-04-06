@@ -1,77 +1,105 @@
-# U.S. Federal Funds Rate Analysis (1954–Present)
+# 📊 U.S. Monetary Policy & Macroeconomic Analysis
 
-## Overview
-This project analyzes the historical behavior of the U.S. **Effective Federal Funds Rate** from 1954 to the present, with a focus on **rate changes rather than levels** to better capture Federal Reserve policy actions. Using time-series analysis and macroeconomic indicators, the project examines monetary tightening and easing cycles and their relationship with unemployment and inflation.
+![Project Banner](images/repo_banner.png)
 
-The goal of this analysis is to provide an intuitive, data-driven view of how U.S. monetary policy evolves over time and how it responds to broader economic conditions.
+## 🧠 Overview
 
----
+This project analyzes the **Federal Funds Rate alongside key macroeconomic indicators**, including inflation and unemployment, to understand how U.S. monetary policy responds to changing economic conditions over time.
 
-## Key Questions
-- How has the Federal Funds Rate evolved over time?
-- When has the Federal Reserve been tightening vs easing policy?
-- How large and frequent are rate changes?
-- How do rate changes relate to unemployment and inflation?
+Using time-series analysis and visualization techniques, the project explores long-term trends, policy cycles, and relationships between major economic variables.
 
 ---
 
-## Key Insights
-- Federal Reserve policy actions are better understood through **rate changes** rather than absolute rate levels.
-- Periods of tightening and easing occur in **distinct cycles**, often aligned with macroeconomic stress.
-- Larger rate changes tend to cluster during periods of elevated inflation or economic instability.
-- The relationship between rate changes and unemployment/inflation is **non-linear**, highlighting the complexity of monetary policy decisions.
+## 🎯 Objectives
+
+* Analyze long-term trends in the Federal Funds Rate
+* Examine relationships between interest rates, inflation, and unemployment
+* Identify monetary policy cycles and economic regimes
+* Visualize modern macroeconomic trends using rolling averages
 
 ---
 
-## Methods
-- Time-series visualization of interest rate levels and changes  
-- First-difference transformation to measure rate changes (basis points)  
-- Rolling averages to smooth volatility and identify policy cycles  
-- Automatic classification of **tightening**, **easing**, and **neutral** periods  
-- Scatter analysis comparing rate changes to unemployment and inflation  
+## 🛠️ Tools & Technologies
+
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Jupyter Notebook
 
 ---
 
-## Tools & Technologies
-- Python  
-- pandas  
-- matplotlib  
-- Jupyter Notebook  
+## 📂 Project Structure
 
----
-
-## Project Structure
-
-```
+```text
 federal-interest-rate-analysis/
-├─ data/
-│ └─ interest_rates.csv
-├─ images/
-│ ├─ rate_levels_over_time.png
-│ ├─ rate_changes_over_time.png
-│ └─ rate_vs_inflation.png
-├─ federal-funds-rate-analysis-1954-present.ipynb
-└─ README.md
+├── data/
+│   └── macro_dashboard_clean.csv
+├── images/
+│   ├── repo_banner.png
+│   ├── rate_levels_over_time.png
+│   ├── inflation_vs_fed_rate.png
+│   ├── unemployment_vs_fed_rate.png
+│   └── recent_macro_trends.png
+├── notebooks/
+│   ├── 01_data_preparation_and_eda.ipynb
+│   └── 02_visual_analysis_and_interpretation.ipynb
+├── reports/
+│   └── summary_report.md
+├── data_dictionary.md
+├── requirements.txt
+└── README.md
 ```
 
+---
+
+## 📊 Key Insights
+
+* The Federal Funds Rate exhibits distinct long-run policy regimes
+* Higher inflation environments are often associated with tighter monetary policy
+* Lower interest rate periods frequently align with weaker labor market conditions
+* Monetary policy reflects trade-offs between inflation control and employment
+* Recent decades show prolonged low-rate environments and gradual policy adjustments
 
 ---
 
-## Data Source
-- Kaggle: *U.S. Federal Funds Rate and Macroeconomic Indicators*
+## 🚀 How to Run
+
+```bash
+pip install -r requirements.txt
+```
+
+Then open:
+
+```text
+notebooks/01_data_preparation_and_eda.ipynb
+notebooks/02_visual_analysis_and_interpretation.ipynb
+```
 
 ---
 
-## How to Run
-1. Clone the repository
-2. Open the Jupyter notebook
-3. Run all cells — no additional configuration required
+## 📌 Data Source
+
+Macroeconomic dataset including:
+
+* Federal Funds Rate
+* CPI
+* Inflation (YoY)
+* Unemployment
 
 ---
 
-## Why This Project
-This project was completed as a **personal portfolio analysis** to demonstrate:
-- Time-series data analysis skills
-- Economic reasoning and interpretation
-- Reproducible research practices
-- Clean, professional GitHub project structure
+## 💡 Project Highlights
+
+* Structured EDA + analysis workflow
+* Multi-variable macroeconomic analysis
+* Clean visual storytelling with interpretation
+* Reproducible project structure
+
+---
+
+## 👤 Author
+
+Christina Foy-Bowman
+Aspiring Data Analyst | MS in Data Analytics (In Progress)
