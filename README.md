@@ -1,194 +1,187 @@
-# 📊 U.S. Monetary Policy & Macroeconomic Analysis
+# 📊 U.S. Monetary Policy Analysis | Python, Statistics & Tableau
 
-![Project Banner](images/repo_banner.png)
+![Monetary Policy Impact Dashboard](images/monetary_policy_impact_dashboard.png)
 
----
+## Project Overview
 
-## 🧠 Overview
+This project analyzes long-term U.S. monetary policy and macroeconomic trends using Federal Reserve economic data.
 
-This project analyzes the **Federal Funds Rate alongside key macroeconomic indicators**, including inflation and unemployment, to understand how U.S. monetary policy responds to changing economic conditions over time.
+The analysis examines relationships among the Federal Funds Rate, inflation, and unemployment from the 1950s through the present. The project combines Python-based data preparation and exploratory analysis, statistical analysis, and an interactive Tableau dashboard to provide both analytical depth and business-friendly visualization.
 
-Using time-series analysis, statistical modeling, and event-based visualization, the project explores long-term policy trends, macroeconomic relationships, and modern economic dynamics.
+## Analytical Questions
 
----
+This project explores:
 
-## 🎯 Objectives
+- How has the Federal Funds Rate changed across major economic periods?
+- How does inflation relate to changes in monetary policy?
+- How does unemployment vary during major economic cycles?
+- What patterns are visible during periods of aggressive monetary tightening?
+- How do recent inflation and interest-rate trends compare with longer-term history?
 
-* Analyze long-term trends in the Federal Funds Rate
-* Examine relationships between interest rates, inflation, and unemployment
-* Identify monetary policy cycles and economic regimes
-* Incorporate statistical analysis to quantify relationships
-* Enhance interpretation through event-based storytelling
+## Key Findings
 
----
+### Federal Funds Rate History
 
-## 💼 Business Relevance
+The Federal Funds Rate has varied substantially across economic periods, with particularly aggressive tightening during the late 1970s and early 1980s.
 
-Understanding how interest rates respond to inflation and unemployment is critical across finance, policy, and business strategy.
+The long-term analysis provides context for interpreting current monetary policy relative to historical rate environments.
 
-This analysis demonstrates how macroeconomic indicators can be evaluated together rather than in isolation. A multi-variable perspective helps:
+### Inflation and Monetary Policy
 
-* **Financial analysts** assess interest rate environments and macroeconomic risk
-* **Policy analysts** evaluate Federal Reserve decision-making
-* **Business leaders** anticipate changes in borrowing costs and economic conditions
+The analysis shows a positive observed relationship between inflation and the Federal Funds Rate.
 
-By combining visualization and statistical analysis, this project provides a more decision-oriented view of monetary policy.
+Periods of elevated inflation have often been associated with higher policy rates as the Federal Reserve responds to inflationary pressure.
 
----
+### Unemployment Across Economic Periods
 
-## 🛠️ Tools & Technologies
+Average unemployment differs across major economic periods.
 
-* Python
-* Pandas
-* NumPy
-* Matplotlib
-* Seaborn
-* Statsmodels
-* Jupyter Notebook
+The Volcker Era, COVID-19 period, and Great Recession show higher average unemployment than more recent post-COVID tightening periods.
 
----
+### Recent Monetary Policy
 
-## 📊 Key Visualizations
+Recent data show inflation rising sharply after the pandemic, followed by significant increases in the Federal Funds Rate.
 
-### Federal Funds Rate Over Time
+Inflation later moderated while interest rates remained elevated relative to the pre-pandemic period.
 
-![Federal Funds Rate](images/rate_levels_over_time.png)
+## Interactive Tableau Dashboard
 
-### Inflation vs Federal Funds Rate
+The Tableau dashboard provides an interactive view of the macroeconomic analysis.
 
-![Inflation vs Fed Rate](images/inflation_vs_fed_rate.png)
+Dashboard features include:
 
-### Unemployment vs Federal Funds Rate
+- Current Federal Funds Rate KPI
+- Current Inflation YoY KPI
+- Current Unemployment KPI
+- Average Federal Funds Rate KPI
+- Federal Funds Rate history
+- Inflation vs. Federal Funds Rate scatter analysis
+- Average unemployment by economic period
+- Recent inflation and Federal Funds Rate comparison
+- Interactive year and economic-period filters
 
-![Unemployment vs Fed Rate](images/unemployment_vs_fed_rate.png)
+[View Tableau Files](tableau/)
 
-### Recent Macroeconomic Trends (Since 2000)
+[View Dashboard PDF](tableau/monetary_policy_impact_dashboard.pdf)
 
-![Recent Trends](images/recent_macro_trends.png)
+## Python Analysis
 
----
+The Python workflow includes:
 
-## 📈 Analytical Methods
+- Data cleaning and preparation
+- Time-series exploration
+- Feature engineering
+- Trend analysis
+- Correlation analysis
+- Statistical interpretation
+- Visualization of macroeconomic relationships
 
-This project combines exploratory data analysis, time-series visualization, and statistical modeling to evaluate monetary policy behavior.
+The analytical notebooks are available in:
 
-Methods include:
+[View Python Notebooks](notebook/)
 
-* Data cleaning and preprocessing
-* Time-series trend analysis
-* Rolling averages to smooth volatility
-* Event-based annotation to connect economic context to policy shifts
-* Correlation analysis
-* Linear regression modeling
+## Statistical Analysis
 
----
+The project includes additional statistical analysis examining relationships among inflation, unemployment, and the Federal Funds Rate.
 
-## 📊 Statistical Analysis
+[View Statistical Analysis](statistical_analysis.md)
 
-To complement visual analysis, this project includes statistical methods to quantify relationships between variables.
+## Data Source
 
-### Techniques Used
+The project uses Federal Reserve economic data covering:
 
-* **Correlation matrix** to evaluate directional relationships
-* **Linear regression model:**
-  Federal Funds Rate ~ Inflation + Unemployment
+- Federal Funds Rate
+- Consumer Price Index
+- Inflation
+- Unemployment
 
-### Why This Matters
+The cleaned analytical dataset is stored in:
 
-Visual trends provide intuition, but statistical analysis strengthens the project by measuring relationships between variables. This helps move the analysis beyond descriptive insights and toward a more analytical framework.
+[data/macro_dashboard_clean.csv](data/macro_dashboard_clean.csv)
 
----
-
-## 🔍 Key Insights
-
-* The Federal Funds Rate exhibits clear long-run policy regimes
-* Higher inflation environments are often associated with tighter monetary policy
-* Lower-rate environments frequently align with weaker labor market conditions
-* Monetary policy reflects trade-offs between inflation and employment
-* Recent decades show prolonged low-rate periods and gradual policy adjustments
-
----
-
-## 🧭 Key Takeaway
-
-Monetary policy is best understood as a balancing act between inflation control and labor market stability. Interest rate movements should be evaluated alongside macroeconomic conditions rather than in isolation.
-
-This project demonstrates how combining multiple variables, statistical analysis, and contextual event annotation leads to a more complete understanding of policy behavior.
-
----
-
-## 📂 Project Structure
-
-```text
-us-monetary-policy-analysis/
-├── data/
-│   └── macro_dashboard_clean.csv
-├── images/
-│   ├── repo_banner.png
-│   ├── rate_levels_over_time.png
-│   ├── inflation_vs_fed_rate.png
-│   ├── unemployment_vs_fed_rate.png
-│   └── recent_macro_trends.png
-├── notebooks/
-│   ├── 01_data_preparation_and_eda.ipynb
-│   └── 02_visual_analysis_and_interpretation.ipynb
-├── reports/
-│   └── summary_report.md
-├── data_dictionary.md
-├── requirements.txt
-└── README.md
-```
-
----
-
-## 🚀 How to Run
-
-```bash
-pip install -r requirements.txt
-```
-
-Then open:
-
-```text
-notebooks/01_data_preparation_and_eda.ipynb
-notebooks/02_visual_analysis_and_interpretation.ipynb
-```
-
----
-
-## 📌 Data Source
-
-Macroeconomic dataset including:
-
-* Federal Funds Rate
-* Consumer Price Index (CPI)
-* Inflation (Year-over-Year)
-* Unemployment Rate
-
----
-
-## ⚠️ Limitations
-
-* The analysis is exploratory and does not establish causality
-* Additional macroeconomic drivers are not included
-* Some early-period inflation values are missing
-* Monthly data may smooth short-term policy changes
-* The regression model is simplified and not intended for forecasting
-
----
-
-## 🚀 Next Steps
-
-* Expand dataset with additional macroeconomic indicators
-* Apply advanced time-series and predictive models
-* Segment analysis by monetary policy regimes
-* Incorporate recession indicators and economic cycles
-* Develop an interactive dashboard for exploration
-
----
-
-## 👤 Author
-
+Additional field definitions are available in:
+
+[View Data Dictionary](data_dictionary.md)
+
+## Analytical Workflow
+
+1. Collected and prepared macroeconomic time-series data.
+2. Cleaned and aligned economic indicators by date.
+3. Engineered inflation and related analytical fields.
+4. Performed exploratory analysis using Python.
+5. Examined statistical relationships among key macroeconomic variables.
+6. Created visualizations to identify long-term and recent trends.
+7. Developed an interactive Tableau dashboard for business-friendly exploration.
+8. Documented findings, methodology, and project structure.
+
+## Tools and Technologies
+
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Statistical Analysis
+- Tableau
+- Data Visualization
+- Time-Series Analysis
+- Exploratory Data Analysis
+
+## Skills Demonstrated
+
+This project demonstrates experience with:
+
+- End-to-end data analysis
+- Time-series data preparation
+- Statistical analysis
+- Correlation analysis
+- Feature engineering
+- Macroeconomic analysis
+- Tableau dashboard development
+- Interactive filtering
+- Data storytelling
+- Translating technical analysis into business-friendly insights
+
+## Repository Structure
+
+    us-monetary-policy-analysis/
+    │
+    ├── data/
+    │   └── macro_dashboard_clean.csv
+    │
+    ├── images/
+    │   ├── monetary_policy_impact_dashboard.png
+    │   ├── inflation_vs_fed_rate.png
+    │   ├── rate_levels_over_time.png
+    │   ├── recent_macro_trends.png
+    │   ├── unemployment_vs_fed_rate.png
+    │   └── repo_banner.png
+    │
+    ├── notebook/
+    │   ├── 01_data_preparation_and_eda.ipynb
+    │   └── 02_visual_analysis_and_interpretation.ipynb
+    │
+    ├── reports/
+    │   └── summary_report.md
+    │
+    ├── tableau/
+    │   ├── monetary_policy_impact_dashboard.twbx
+    │   ├── monetary_policy_impact_dashboard.pdf
+    │   └── README.md
+    │
+    ├── data_dictionary.md
+    ├── statistical_analysis.md
+    ├── requirements.txt
+    └── README.md
+
+## Important Interpretation Note
+
+This project is an exploratory macroeconomic analysis. Relationships shown among inflation, unemployment, and the Federal Funds Rate represent observed historical associations and should not be interpreted as proof of direct causation.
+
+## Author
+
+**Christina Foy-Bowman**
+
+Data Analytics | Business Intelligence | AI Evaluation
 **Christina Foy-Bowman**
 Aspiring Data Analyst | M.S. in Data Analytics (In Progress)
 
